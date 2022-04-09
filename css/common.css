@@ -1,0 +1,356 @@
+/* --------------公共样式---------------- */
+
+/* 通用版心 */
+.wrapper{
+    /* width: 80%; */
+    width: 1250px;
+    margin: 0 auto;
+}
+
+
+
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    height: 52px;
+    /* background-color: pink; */
+}
+.shortcut .wrapper ul{
+    float: right;
+}
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+}
+.shortcut .wrapper a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut .wrapper li:last-child a{
+    border: 0;
+}
+.shortcut .wrapper a span{
+    display:inline-block;
+    width: 11px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+
+
+
+/* 头部 */
+.header{
+     margin: 30px auto;
+     height: 70px;
+     /* background-color: gray; */
+}
+.logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+    /* background-color: pink; */
+}
+.logo h1{
+    width: 207px;
+    height: 70px;
+}
+.logo h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.nav{
+    margin-left: 40px;
+    float: left;
+    height: 70px;
+    /* background-color: yellow; */
+}
+.nav li{
+    float: left;
+    margin-right: 48px;
+    height: 70px;
+    line-height: 70px;
+}
+.nav li a{
+    padding-bottom: 7px;
+}
+.nav li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+
+}
+
+.search{
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 34px;
+    height: 30px;
+    width: 172px;
+    /* background-color: pink; */
+    border-bottom: 2px solid #e7e7e7;
+}
+.search input{
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+.search input::placeholder{
+    font-size: 14px;
+    color: #ccc;    
+}
+.search span{
+    position: absolute;
+    left:5px;
+    top:5px;
+    /* display: inline-block; 使用 position: absolute;后不用该属性*/
+    width: 18px;
+    height: 18px;
+    /* background-color: pink; */
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+
+.car{
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 35px;
+    height: 23px;
+    width: 23px;
+    /* background-color: blue; */
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+}
+.car span{
+    position: absolute;
+    top:-5px;
+    right: -13px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+
+/* banner */
+.banner{
+    height: 500px;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    /* background-color: pink; */
+}
+.banner .aside{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+}
+.banner .aside li{
+    /* text-align: center; */
+    height: 50px;
+    line-height: 50px;
+}
+.banner .aside a{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 19px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+.banner .aside a:hover{
+    background-color: #27ba9b;
+}
+.banner .aside a span{
+    margin-left:20px;
+    font-size: 14px;
+    color: #fff;
+}
+.banner .aside a::after{
+    content: '>';
+    float: right;
+}
+.banner .prev,
+.banner .next{
+    position: absolute;
+    top:228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+.banner .prev{
+    left:260px;
+    background-position: 14px -60px;
+}
+.banner .next{
+    right:10px;
+    background-position: -22px -60px;
+}
+.banner ol{
+    position: absolute;
+    left:680px;
+    bottom: 30px;
+    width: 200px;
+    height: 10px;
+    /* background-color: pink; */
+}
+.banner ol li{
+    float: left;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol .current{
+    background-color: #fff;
+}
+.goods .head{
+    height: 114px;
+    line-height: 114px;
+}
+.goods .head h2{
+    float: left;
+    height: 114px;
+    font-size: 29px;
+    font-weight: 400;
+}
+.goods .head h2 span{
+    margin-left: 30px;
+    font-size: 16px;
+    color: #999;
+}
+.goods .head a{
+    float:right;
+    color: #999;
+
+}
+.goods .head a::after{
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -109px;
+}
+.goods .body li{
+    float: left;
+    margin-right: 10px;
+    width: 300px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+.goods .body img{
+    width: 300px;
+}
+.goods .body li h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.goods .body div{
+    color: #9a2e1f;
+    font-size: 17px;
+} 
+.goods .body div span{
+    font-size: 23px;
+}
+
+
+/* 版权区域 */
+.footer{
+    height: 342px;
+    background-color: #333;
+}
+.footer .top{
+    height: 175px;
+    padding-left: 135px;
+    padding-top: 59px;
+    border-bottom: 1px solid #434343;
+}
+.footer .top li{
+    position: relative;
+    float:left;
+    margin-right: 180px;;
+    width: 180px;
+    height: 58px;
+    /* background-color: pink; */
+    text-align: right;
+    line-height: 58px;
+    font-size: 28px;
+    color: #fff;
+}
+.footer .top li:last-child{
+    margin-right: 0;
+}
+.footer .top li .first{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+}
+.footer .top li .second{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 64px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -65px 0;
+}
+.footer .top li .third{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 70px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -129px 0;
+}
+.footer .buttom{
+    padding-top: 43px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.footer .buttom a{
+    font-size: 14px;
+    color: #999;
+}
+.footer .buttom p{
+    margin-bottom: 20px;
+}
